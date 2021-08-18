@@ -1,0 +1,18 @@
+#password{
+    border-radius: 0.365rem 0rem 0rem 0.365rem;
+    border: rgb(209, 213, 219) solid 1.2px;
+    border-right: none;
+}
+#eye{
+    width: 10%;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 0rem 0.365rem 0.365rem 0rem;
+    border: rgb(209, 213, 219) solid 1.2px;
+    border-left: none;
+    overflow: hidden;
+    span{
+        display: flex;
+        opacity: 40%;
+    }
+}

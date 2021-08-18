@@ -1,0 +1,102 @@
+
+
+.profile{
+    margin: 1.9rem;
+    background-color: #191C20;
+    overflow: hidden;
+    border-radius: 0.3rem;
+    padding: 3.7rem 2rem;
+    .info{
+        display: flex;
+        .pic{
+            overflow: hidden;
+            width: 9rem;
+            height: 9rem;
+            border-radius: 90rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                opacity: 90%;
+                width: 9rem;
+                height: 9rem;
+                object-fit: cover;
+            }
+        }
+        .main{
+            padding: 0.5rem 1.9rem;
+            display: flex;
+            flex-direction: column;
+            .id{
+                font-weight: 400;
+                color: #6d6d6db0;
+                padding: 1.2rem 0px 0px 0px;
+                span{
+                    cursor: pointer;
+                    color: #6d6d6db0;
+                    opacity: 50%;
+                    transform: scale(0.7) translateY(-6px);
+                }
+            }
+            .rol{
+                transform: translateY(0.5rem);
+                font-weight: 300;
+                width: 6rem;
+                height: 2rem;
+                color: #ffffffb9;
+                font-weight: 500;
+                outline: none;
+                font-size: 0.9rem;
+                padding: 0.2rem 0.6rem;
+                border-radius: 90rem;
+            }
+            .rd{
+                opacity: 50%;
+            }
+        }
+    }
+}
+
+.neutro{
+    background-color: #555555e7;
+    color: white;
+}
+.atlete{
+    background-color: #151770e7;
+    color: white;
+}
+.medic{
+    background-color: #045a25e7;
+    color: white;
+}
+
+.pich{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 90rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: #ffffffb0;
+    border: solid 0.1rem black;
+    color: black;
+    transition-duration: 300ms;
+    &:hover{
+        background-color: #ffffffcc;
+    }
+}
+
+.mat-icon{
+    cursor: pointer;
+    display: flex;
+}
+
+.input_edit{
+    color: whitesmoke;
+    width: 100%;
+    input{
+        background-color: transparent;
+    }
+}

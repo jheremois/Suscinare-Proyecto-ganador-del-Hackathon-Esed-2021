@@ -1,0 +1,22 @@
+<header class="gr-gray-d shadow-lg text-bla primaco flex justify-between items-center fix px-4">
+    <div class="logo flex space-x-3 items-center">
+        <h1 class="text-blu text-2xl font-bold">
+            suscinare
+        </h1>
+    </div>
+    <div class="text-sm">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>settings</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button routerLink="/zt/profile/edit" mat-menu-item>
+              <mat-icon>manage_accounts</mat-icon>
+              <span>Profile</span>
+            </button>
+            <button routerLink="/login" mat-menu-item>
+              <mat-icon>logout</mat-icon>
+              <span>logout</span>
+            </button>
+          </mat-menu>
+    </div>
+</header>

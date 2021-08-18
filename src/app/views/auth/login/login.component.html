@@ -1,0 +1,94 @@
+<div class="min-h-screen gr-gray-l flex flex-col justify-center sm:px-6 lg:px-8">
+    <span>
+      <div class="flex center">
+        <img class="mx-auto h-24 w-auto" src="assets/logo.svg" alt="Workflow">
+      </div>
+    
+      <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md fade-in">
+        <div class="gr-gray shadow-lg py-8 px-4  sm:rounded-lg sm:px-10">
+          <h1 class="text-3xl my-2 text-gray-50 font-semibold text-center">
+            Login
+          </h1>
+          <form [formGroup]="formGroup" (ngSubmit)="submit()">
+
+            <div class="space-y-5 my-6">
+
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-50">Email</label>
+                <div class="mt-1 relative rounded-md shadow-sm">
+                  <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                  </div>
+                  <input 
+                    type="text"
+                    name="email" 
+                    id="email" 
+                    formControlName="email"
+                    class="focus:ring-gray-500 focus:border-gray-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md" 
+                    placeholder="you@example.com">
+                </div>
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-50">password</label>
+                <div class="flex justify-between mt-1 relative rounded-md shadow-sm">
+                  <input 
+                      name="password"
+                      placeholder="Your password"
+                      id="password"
+                      [type]="inputType"
+                      formControlName="password"
+                      class="appearance-none block w-full px-3 py-2 shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm"
+                  >
+                  <div (click)="ShowPassword()" id="eye" class="flex justify-center items-center shadow-sm">
+                    <span>
+                      <mat-icon *ngIf="passwordVisibility">visibility_outlined</mat-icon>
+                      <mat-icon *ngIf="!passwordVisibility">visibility_off_outlined</mat-icon>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div class="">
+                <a routerLink="/register" class="text-gray-50 hover:text-gray-300">
+                New? Create an acount!</a>
+              </div>
+              <div>
+                <button class="text-gray-50 rounded-md gr-red hover:bg-red-700 py-1 px-5">Login</button>
+              </div>
+            </div>
+            
+          </form>
+
+          <div class="mt-6">
+            <div class="relative">
+              <div class="absolute inset-0 flex items-center">
+                <div class="w-full border-t border-gray-300"></div>
+              </div>
+              <div class="relative flex justify-center text-sm">
+                <span class="px-2 gr-gray text-gray-400">
+                  Or continue with Google
+                </span>
+              </div>
+            </div>
+    
+            <div class="mt-6">
+              <div>
+                <a href="#" class="w-full inline-flex justify-center py-2 rounded-md px-4 borderrounded-md shadow-sm gr-red text-sm font-medium text-gray-500 hover:bg-red-700">
+                  <span class="sr-only">Sign in with Google</span>
+                  <img src="assets/google.svg" alt="Google">
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </span>
+</div>

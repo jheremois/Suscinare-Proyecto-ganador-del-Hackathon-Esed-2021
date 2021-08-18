@@ -1,0 +1,217 @@
+<!-- <div class="profile flex justify-between text-gray-50 shadow-sm">
+    <form class="info">
+        <div class="pic gr-gray-l">
+            <img src="assets/profile.jpg" alt="">
+            <div class="pich change">
+                <label for="Change_pic" class="shadow-md">
+                    <mat-icon>
+                        photo_camera
+                    </mat-icon>
+                    <input type="file" name="" id="Change_pic" class="hidden">
+                </label>
+            </div>
+        </div>
+        <div class="main">
+            <p class="id flex ">
+                139rjfj193fm13jf91m39fcm
+                <span>
+                    <app-tooltip 
+                        tip="This is your unique user id, you cannot change it for security reasons"
+                        icon="info_outlined"
+                    >
+                    </app-tooltip>
+                </span>
+            </p>
+            <div>
+
+                <div>
+                    <select id="rol" name="rol" class="rol gr-gray-l">
+                      <option *ngFor="let rol of roles">
+                        <p class="option">
+                            {{
+                                rol
+                            }}
+                        </p>
+                    </option>
+                    </select>
+                  </div>
+
+            </div>
+        </div>
+    </form>
+    <a routerLink="profile" class="edit hover:text-gray-200" (ngSubmit)="send()">
+        <mat-icon>save</mat-icon>
+    </a>
+</div> 
+
+
+Atleta: 
+- Nombre
+- record
+- imagen
+- Nacionalidad
+- peso
+- altura
+- edad
+- Gym
+- Fecha de nacimiento
+
+-->
+
+<div *ngIf="user" class="min-h-screen gr-gray-l">
+  
+    <main class="py-10">
+      <!-- Page header -->
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 md:flex md:items-center md:justify-between md:space-x-5 lg:max-w-7xl lg:px-8">
+        <div class="flex items-center space-x-5">
+          <div class="flex-shrink-0">
+            <div class="relative">
+              <img class="h-16 w-16 rounded-full" src="assets/user.png" alt="user">
+              <span class="absolute inset-0 shadow-inner rounded-full" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-2xl font-bold text-gray-50">
+              {{ user }}
+            </h1>
+            <p class="text-sm font-medium text-gray-500">Enter as a <a href="#" class="text-gray-50"> Athlete </a> on <time datetime="2020-08-25">August 25, 2020</time></p>
+          </div>
+        </div>
+        <div class="mt-6 flex flex-col-reverse justify-stretch space-y-4 space-y-reverse sm:flex-row-reverse sm:justify-end sm:space-x-reverse sm:space-y-0 sm:space-x-3 md:mt-0 md:flex-row md:space-x-3">
+          <a routerLink="/zt" type="button" class="inline-flex items-center justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-400  gr-gray hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500">
+            Save
+          </a>
+        </div>
+      </div>
+  
+      <div class="mt-8 grid items-center justify-items-center fade-in">
+        <div class="space-y-6 lg:col-start-1 lg:col-span-2 w-4/5">
+          <!-- Description list-->
+          <section aria-labelledby="applicant-information-title">
+            <div class=" gr-gray shadow sm:rounded-lg">
+              <div class="px-4 py-5 sm:px-6">
+                <h2 id="applicant-information-title" class="text-lg leading-6 font-medium text-gray-50">
+                  User Information
+                </h2>
+                <p class="mt-1 max-w-2xl text-sm text-gray-500">
+                  Personal details as an athlete.
+                </p>
+              </div>
+              <div class="border-t border-gray-200 px-4 py-5 sm:px-6">
+                <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
+                  <div class="sm:col-span-1">
+                    <dt class="text-sm font-medium text-gray-500">
+                      Edad
+                    </dt>
+                    <dd class="mt-1 text-sm">
+                      <div class="input_edit">
+                        <div class="mt-1">
+                          <input type="text" name="first_name" id="first_name" autocomplete="given-name" class="py-1 px-4 block w-full shadow-smy">
+                        </div>
+                      </div>
+                    </dd>
+                  </div>
+                  <div class="sm:col-span-1">
+                    <dt class="text-sm font-medium text-gray-500">
+                      Nombre
+                    </dt>
+                    <dd class="mt-1 text-sm">
+                      <div class="input_edit">
+                        <div class="mt-1">
+                          <input type="text" name="first_name" id="first_name" autocomplete="given-name" class="py-1 px-4 block w-full shadow-smy">
+                        </div>
+                      </div>
+                    </dd>
+                  </div>
+                  <div class="sm:col-span-1">
+                    <dt class="text-sm font-medium text-gray-500">
+                      Record
+                    </dt>
+                    <dd class="mt-1 text-sm">
+                      <div class="input_edit">
+                        <div class="mt-1">
+                          <input type="text" name="first_name" id="first_name" autocomplete="given-name" class="py-1 px-4 block w-full shadow-smy">
+                        </div>
+                      </div>
+                    </dd>
+                  </div>
+                  <div class="sm:col-span-1">
+                    <dt class="text-sm font-medium text-gray-500">
+                      Peso
+                    </dt>
+                    <dd class="mt-1 text-sm">
+                      <div class="input_edit">
+                        <div class="mt-1">
+                          <input type="text" name="first_name" id="first_name" autocomplete="given-name" class="py-1 px-4 block w-full shadow-smy">
+                        </div>
+                      </div>
+                    </dd>
+                  </div>
+                  <div class="sm:col-span-1">
+                    <dt class="text-sm font-medium text-gray-500">
+                      Nacionalidad
+                    </dt>
+                    <dd class="mt-1 text-sm">
+                      <div class="input_edit">
+                        <div class="mt-1">
+                          <input type="text" name="first_name" id="first_name" autocomplete="given-name" class="py-1 px-4 block w-full shadow-smy">
+                        </div>
+                      </div>
+                    </dd>
+                  </div>
+                  <div class="sm:col-span-1">
+                    <dt class="text-sm font-medium text-gray-500">
+                      Altura
+                    </dt>
+                    <dd class="mt-1 text-sm">
+                      <div class="input_edit">
+                        <div class="mt-1">
+                          <input type="text" name="first_name" id="first_name" autocomplete="given-name" class="py-1 px-4 block w-full shadow-smy">
+                        </div>
+                      </div>
+                    </dd>
+                  </div>
+                  <div class="sm:col-span-1">
+                    <dt class="text-sm font-medium text-gray-500">
+                      Fecha de nacimiento
+                    </dt>
+                    <dd class="mt-1 text-sm">
+                      <div class="input_edit">
+                        <div class="mt-1">
+                          <input type="text" name="first_name" id="first_name" autocomplete="given-name" class="py-1 px-4 block w-full shadow-smy">
+                        </div>
+                      </div>
+                    </dd>
+                  </div>
+                  <div class="sm:col-span-1">
+                    <dt class="text-sm font-medium text-gray-500">
+                      Gimnacio
+                    </dt>
+                    <dd class="mt-1 text-sm">
+                      <div class="input_edit">
+                        <div class="mt-1">
+                          <input type="text" name="first_name" id="first_name" autocomplete="given-name" class="py-1 px-4 block w-full shadow-smy">
+                        </div>
+                      </div>
+                    </dd>
+                  </div>
+                  <!-- <div class="sm:col-span-2">
+                    <dt class="text-sm font-medium text-gray-500">
+                      Peso
+                    </dt>
+                    <dd class="mt-1 text-sm">
+                      <div class="input_edit">
+                        <div class="mt-1">
+                          <input type="text" name="first_name" id="first_name" autocomplete="given-name" class="py-1 px-4 block w-full shadow-smy">
+                        </div>
+                      </div>
+                    </dd>
+                  </div> -->
+                </dl>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+</div>

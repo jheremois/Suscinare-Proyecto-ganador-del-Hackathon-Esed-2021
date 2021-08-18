@@ -1,0 +1,82 @@
+<app-header></app-header>
+<div class="flex">
+    <aside class="shadow-lg h-screen">
+        <div class="justify-center flex mt-9 mb-5">
+            <a routerLinkActive="active2" matRipple routerLink="perfil" [matRippleColor]="color" class="flex items-center justify-center rounded-full py-3 w-10/12 bggrad">
+                <div class="icon text-white">
+                    <mat-icon>
+                        account_circle
+                    </mat-icon>
+                </div>
+                <p class="text-white font-bold pl-2">
+                    Perfil empresarial
+                </p>
+            </a>
+        </div>
+        <nav>
+            <a routerLinkActive="active" matRipple routerLink="estadisticas" [matRippleColor]="color" class="option flex items-center option">
+                <div class="icon text-bla">
+                    <mat-icon>
+                        bar_chart
+                    </mat-icon>
+                </div>
+                <p class="text-bla">
+                    Estadisticas
+                </p>
+            </a>
+            <a routerLinkActive="active" matRipple routerLink="entradas" [matRippleColor]="color" class="option flex items-center option">
+                <div class="icon text-bla" >
+                    <mat-icon>
+                        inbox
+                    </mat-icon>
+                </div>
+                <p class="text-bla">
+                    Entradas
+                </p>
+            </a>
+            <a routerLinkActive="active" matRipple routerLink="mi-red" [matRippleColor]="color" class="option flex items-center option">
+                <div class="icon text-bla">
+                    <mat-icon>
+                        account_tree
+                    </mat-icon>
+                </div>
+                <p class="text-bla">
+                    Mi red
+                </p>
+            </a>
+            <a routerLinkActive="active" matRipple routerLink="contrata" [matRippleColor]="color" class="option flex items-center option">
+                <div class="icon text-bla">
+                    <mat-icon>
+                        business_center
+                    </mat-icon>
+                </div>
+                <p class="text-bla">        
+                    Contrata
+                </p>
+            </a>
+            <a routerLinkActive="active" matRipple routerLink="contratos" [matRippleColor]="color" class="option flex items-center option">
+                <div class="icon text-bla">
+                    <mat-icon>
+                        article
+                    </mat-icon>
+                </div>
+                <p class="text-bla">
+                    Contratos
+                </p>
+            </a>
+            <a routerLinkActive="active" matRipple routerLink="cartera" [matRippleColor]="color" class="option flex items-center option">
+                <div class="icon text-bla">
+                    <mat-icon>
+                        account_balance_wallet
+                    </mat-icon>
+                </div>
+                <p class="text-bla">
+                    Cartera
+                </p>
+            </a>
+        </nav>
+    </aside>
+    <div class="cont bg-gray-200">
+        <router-outlet></router-outlet>
+    </div>
+</div>
