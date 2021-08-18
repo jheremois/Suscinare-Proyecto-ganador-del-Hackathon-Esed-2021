@@ -116,7 +116,26 @@ $prezhe-theme: mat-light-theme((
 // that you are using.
 @include angular-material-theme($prezhe-theme);
 
+
+
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.chip{
+  width: auto;
+  height: auto;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border:1px solid #4E5A6A;
+  margin: 0px 10px;
+  color: #4E5A6A;
+  font-size: 10px;
+  &:hover{
+    background: #4E5A6A;
+  color: #fff;
+
+  }
+}

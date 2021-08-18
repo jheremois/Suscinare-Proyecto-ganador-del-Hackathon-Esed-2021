@@ -28,7 +28,7 @@ const routes: Routes = [
           },
           {
             path: 'contrata',
-            loadChildren: () => import('@views/profile/profile.module').then(m => m.ProfileModule)
+            loadChildren: () => import('@views/contract/contract.module').then(m => m.ContractModule)
           },
           {
             path: 'contratos',
@@ -56,4 +56,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class DashBoardRoutingModule { } 
+export class DashBoardRoutingModule { }
