@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from "@shared/material/material.module";
 import { TooltipComponent } from './tooltip/tooltip.component';
 import { ListAvatarWorkComponent } from './list-avatar-work/list-avatar-work.component';
+import { PlaceholdComponent } from './placehold/placehold.component';
 
 const components = [
   TooltipComponent,
-  ListAvatarWorkComponent
+  ListAvatarWorkComponent,
+  PlaceholdComponent,
 ]
 
 @NgModule({

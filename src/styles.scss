@@ -1,4 +1,13 @@
 // Global
+:root {
+  --blanco: #FFFFFF;
+  --azul0:  #ECF7FF;
+  --azul1:  #1DA0FF;
+  --azul2:  #004AAD;
+  --gris:   #83879A;
+  --grism:  #4E5A6A;
+}
+
 *{
   outline: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -19,9 +28,11 @@
 .fade-in{
   animation: fi 400ms linear;
 }
-
+.text-azul{
+  color: var(--azul1)
+}
 .primaco{
-  background-color: #F3F5FF;
+  background-color: var(--blanco);
 }
 .primaco2{
   background-color: #F3F5FF;
