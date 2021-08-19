@@ -15,6 +15,9 @@
   width: 100%;
   outline: none;
 }
+.pointer {
+  cursor: pointer;
+}
 
 .fade-in{
   animation: fi 400ms linear;
@@ -29,8 +32,28 @@
 .text-bla{
   color: #7D8295;
 }
+.text-dark-bold{
+    color: #515151;
+    font-weight: 600;
+}
 .text-blu{
   color: #1DA0FF;
+}
+
+// Angular Material
+mat-chip.mat-chip.mat-focus-indicator.mat-primary.mat-standard-chip.mat-chip-with-trailing-icon.ng-star-inserted {
+  background: rgba(78, 90, 106, 0.05);
+  border: 1px solid #4e5a6a;
+  box-sizing: border-box;
+}
+mat-icon.mat-icon.notranslate.mat-chip-remove.mat-chip-trailing-icon.material-icons.mat-icon-no-color {
+  color: #000000;
+}
+.mat-chip-list-wrapper {
+  background-color: #FFFFFF;
+  padding: 20px 30px;
+  border-bottom: 3px solid #f3f5ff;
+  margin: 0;
 }
 
 @keyframes fi {

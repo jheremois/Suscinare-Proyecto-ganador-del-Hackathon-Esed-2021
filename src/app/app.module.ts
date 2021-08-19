@@ -1,3 +1,4 @@
+import { RedComponent } from './views/red/red.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
@@ -16,6 +17,7 @@ import { ContractComponent } from './views/contract/contract.component';
   declarations: [
     AppComponent,
     ContractComponent,
+    RedComponent
 
   ],
   imports: [
