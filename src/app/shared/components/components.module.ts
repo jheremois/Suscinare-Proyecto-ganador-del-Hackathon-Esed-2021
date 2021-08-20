@@ -5,12 +5,15 @@ import { TooltipComponent } from './tooltip/tooltip.component';
 import { ListAvatarWorkComponent } from './list-avatar-work/list-avatar-work.component';
 import { GraficComponent } from './grafic/grafic.component';
 import { ChartsModule } from 'ng2-charts';
-
+import { ContactCardComponent } from './contact-card/contact-card.component';
+import { PlaceholdComponent } from './placehold/placehold.component';
 
 const components = [
   TooltipComponent,
   ListAvatarWorkComponent,
   GraficComponent,
+  ContactCardComponent,
+  PlaceholdComponent
 ]
 const module = [
   ChartsModule
@@ -18,7 +21,7 @@ const module = [
 
 @NgModule({
   declarations: [
-    ...components,
+    ...components
   ],
   imports: [
     CommonModule,

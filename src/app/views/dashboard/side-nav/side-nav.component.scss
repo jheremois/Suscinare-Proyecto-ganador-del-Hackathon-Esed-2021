@@ -2,10 +2,23 @@ aside{
     transition-duration: 400ms;
     z-index: 100;
     padding: 8vh 0px 0px 0px;
-    width: 18rem;
+    width: 5.1rem;
     overflow: hidden;
+    .perfinlink{
+        padding: 10px;
+    }
+    .perfinlink p{
+        display: none;
+        white-space: nowrap;
+    }
     &:hover{
-        width: 18.4rem;
+        width: 18rem;
+        .perfinlink{
+            padding: 10px 15px;
+        }
+        .perfinlink p{
+            display: flex;
+        }
     }
     nav{
         display: flex;
@@ -58,4 +71,11 @@ aside{
 }
 .bggrad{
     background: linear-gradient(265.38deg, rgba(29, 160, 255, 0.87) -20%, rgba(0, 74, 173, 0.87) 97.46%);
+}
+
+.text-white {
+    display: flex;
+}
+.text-bla{
+    white-space: nowrap;
 }

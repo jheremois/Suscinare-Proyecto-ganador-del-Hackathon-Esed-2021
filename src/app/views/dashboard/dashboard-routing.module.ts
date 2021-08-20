@@ -24,7 +24,7 @@ const routes: Routes = [
           },
           {
             path: 'mi-red',
-            loadChildren: () => import('@views/profile/profile.module').then(m => m.ProfileModule)
+            loadChildren: () => import('@views/red/red.module').then(m => m.RedModule)
           },
           {
             path: 'contrata',

@@ -1,3 +1,4 @@
+import { RedComponent } from './views/red/red.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
@@ -15,6 +16,8 @@ import { ComponentsModule } from "@shared/components/components.module";
 @NgModule({
   declarations: [
     AppComponent,
+    RedComponent
+
   ],
   imports: [
     BrowserModule,

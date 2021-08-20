@@ -1,21 +1,26 @@
-<header class="gr-gray-d shadow-lg text-bla primaco flex justify-between items-center fix px-4">
+<header class="shadow-lg text-bla py-8 flex justify-between items-center fix px-4">
     <div class="logo flex space-x-3 items-center">
         <h1 class="text-blu text-2xl font-bold">
             suscinare
         </h1>
     </div>
-    <div class="text-sm">
-        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-            <mat-icon>settings</mat-icon>
+    <div class="text-sm flex space-x-6 items-center">
+        <a href="/zt/entradas" class="hover:text-blue-400">
+          <mat-icon>
+            notifications
+          </mat-icon>
+        </a>
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" class="botonperfil">
+            <img src="assets\empresas\image3.png" alt="no sale" class="rounded-full w-6">
           </button>
           <mat-menu #menu="matMenu">
             <button routerLink="/zt/profile/edit" mat-menu-item>
               <mat-icon>manage_accounts</mat-icon>
-              <span>Profile</span>
+              <span>Perfil</span>
             </button>
             <button routerLink="/login" mat-menu-item>
               <mat-icon>logout</mat-icon>
-              <span>logout</span>
+              <span>Salir</span>
             </button>
           </mat-menu>
     </div>
