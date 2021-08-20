@@ -1,0 +1,26 @@
+.content-stat{
+   display: flex;
+   height: 100vh;
+   background-color: white;
+}
+.card {
+  width: 100%;
+    background: #f3f5ff;
+    padding: 0px;
+    height: -webkit-max-content;
+    height: max-content;
+    padding: 7px;
+    margin: 10px auto;
+    position: relative;
+  }
+  .card-stat{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 30px auto;
+    h4{
+      color: #1DA0FF;
+    font-weight: bolder;
+    }
+  
+}

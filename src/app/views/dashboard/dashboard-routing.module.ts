@@ -16,7 +16,7 @@ const routes: Routes = [
           },
           {
             path: 'estadisticas',
-            loadChildren: () => import('@views/profile/profile.module').then(m => m.ProfileModule)
+            loadChildren: () => import('@views/estadisticas/estadisticas.module').then(m => m.EstadisticasModule)
           },
           {
             path: 'entradas',

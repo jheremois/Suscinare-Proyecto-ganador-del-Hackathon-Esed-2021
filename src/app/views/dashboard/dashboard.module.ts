@@ -19,7 +19,8 @@ import { HeaderComponent } from "@views/dashboard/header/header.component";
     DashBoardRoutingModule,
     ComponentsModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
   ]
 })
 export class DashboardModule { }

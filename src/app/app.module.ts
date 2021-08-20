@@ -10,13 +10,11 @@ import { ReactiveFormsModule } from "@angular/forms";
 
 import { MaterialModule } from "@shared/material/material.module";
 import { ComponentsModule } from "@shared/components/components.module";
-import { ContractComponent } from './views/contract/contract.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContractComponent,
-
   ],
   imports: [
     BrowserModule,
