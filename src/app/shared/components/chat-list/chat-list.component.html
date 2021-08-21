@@ -1,0 +1,21 @@
+<ng-container *ngFor="let item of data">
+  <div class="flex w-full bg-white p-3 justify-between items-center">
+    <div class="flex flex-row items-center ">
+      <div class="m-2">
+        <img class="img" [src]="'assets/empresas/' + item?.img" alt="">
+      </div>
+
+      <div class="flex flex-col">
+        <span class="name-empresa m-1 text-blue-600">{{item?.name}}</span>
+        <div class="flex items-center">
+          <mat-icon class="text-gray-500 m-1">mail</mat-icon>
+          <span class="text-gray-500">
+            {{item?.mail}}
+          </span>
+        </div>
+      </div>
+    </div>
+    <mat-icon class="filled text-blue-500 ">circle</mat-icon>
+  </div>
+</ng-container>
+

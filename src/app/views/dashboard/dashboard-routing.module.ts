@@ -20,7 +20,7 @@ const routes: Routes = [
           },
           {
             path: 'entradas',
-            loadChildren: () => import('@views/profile/profile.module').then(m => m.ProfileModule)
+            loadChildren: () => import('@views/entradas/entradas.module').then(m => m.EntradasModule)
           },
           {
             path: 'mi-red',

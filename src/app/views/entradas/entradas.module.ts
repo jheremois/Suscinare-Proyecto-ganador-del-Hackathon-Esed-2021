@@ -1,22 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { EstadisticasRoutingModule } from './estadisticas-routing.module';
-import { EstadisticasComponent } from './estadisticas.component';
+import { EntradasRoutingModule } from './entradas-routing.module';
+import { EntradasComponent } from './entradas.component';
+import { MainComponent } from './main/main.component';
 import { ComponentsModule } from '../../shared/components/components.module';
-import { MainComponent} from './pages/main/main.component'
 import { MaterialModule } from '../../shared/material/material.module';
+
 
 @NgModule({
   declarations: [
+    EntradasComponent,
     MainComponent,
-    EstadisticasComponent,
   ],
   imports: [
     CommonModule,
-    EstadisticasRoutingModule,
+    EntradasRoutingModule,
     ComponentsModule,
     MaterialModule
   ]
 })
-export class EstadisticasModule { }
+export class EntradasModule { }
