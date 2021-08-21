@@ -1,26 +1,53 @@
-.content-stat{
-   display: flex;
-   height: 100vh;
-   background-color: white;
+.content-stat {
+  display: flex;
+  height: 100vh;
+  background-color: white;
+  flex-wrap: wrap;
 }
 .card {
   width: 100%;
-    background: #f3f5ff;
-    padding: 0px;
-    height: -webkit-max-content;
-    height: max-content;
-    padding: 7px;
-    margin: 10px auto;
-    position: relative;
-  }
-  .card-stat{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    margin: 30px auto;
-    h4{
-      color: #1DA0FF;
-    font-weight: bolder;
-    }
-  
+  background: #f3f5ff;
+  padding: 0px;
+  height: -webkit-max-content;
+  height: max-content;
+  padding: 7px;
+  margin: 10px auto;
+  position: relative;
+  border-radius: 10px;
 }
+.card-stat {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 30px auto;
+
+
+}
+
+h4 {
+  color: var(--azul2);
+  font-weight: 700;
+  font-size: larger;
+}
+.line{
+  margin:0px auto
+}
+.m-card{
+  display: flex;
+  width: 120vh;
+}
+.select {
+  background: var(--azul2);
+  display: flex;
+  color: white;
+  padding: 5px;
+  width: 14vh;
+  border-radius: 4px;
+  mat-select:host ::ng-deep {
+    transform: translate(0px, 0px);
+    & .mat-select-trigger .mat-select-arrow-wrapper .mat-select-arrow {
+      color: white;
+    }
+  }
+}
+
