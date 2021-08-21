@@ -1,0 +1,88 @@
+<div class="contracts-container">
+    <div class="space-1">
+        <ul>
+            <li>
+                <h2>12 Solicitudes</h2>
+                <button type="button"
+                    class="inline-flex items-center px-2.5 py-1.5 border border-gray-300 shadow-sm text-xs font-medium rounded text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Ver mensajes
+                </button>
+            </li>
+            <li>
+                <h2>8 Paquetes</h2>
+                <button type="button"
+                    class="inline-flex items-center px-2.5 py-1.5 border border-gray-300 shadow-sm text-xs font-medium rounded text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Gestionar
+                </button>
+            </li>
+            <li>
+                <button type="button" id="record"
+                    class="inline-flex items-center px-2.5 py-1.5 border border-gray-300 shadow-sm text-xs font-medium rounded text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Ver historial
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="space-2">
+        <h3 class="text-lg leading-6 font-medium text-gray-900">
+            Panel de contratos
+        </h3>
+        <dl class="mt-5 grid grid-cols-1 sm:grid-cols-3">
+            <div class="px-4 py-5 bg-white shadow overflow-hidden sm:p-6">
+                <dt class="text-sm font-medium text-gray-500 truncate">
+                    Activos
+                </dt>
+                <dd class="mt-1 text-3xl font-semibold text-gray-900">
+                    13
+                </dd>
+            </div>
+
+            <div class="px-4 py-5 bg-white shadow overflow-hidden sm:p-6">
+                <dt class="text-sm font-medium text-gray-500 truncate">
+                    Completos
+                </dt>
+                <dd class="mt-1 text-3xl font-semibold text-gray-900">
+                    70%
+                </dd>
+            </div>
+
+            <div class="px-4 py-5 bg-white shadow overflow-hidden sm:p-6">
+                <dt class="text-sm font-medium text-gray-500 truncate">
+                    Pendientes
+                </dt>
+                <dd class="mt-1 text-3xl font-semibold text-gray-900">
+                    4
+                </dd>
+            </div>
+        </dl>
+    </div>
+    <div class="space-3">
+        <h2>Contratos</h2>
+        <ul role="list" class="grid grid-cols-1 gap-9 sm:grid-cols-2 lg:grid-cols-3">
+            <li *ngFor="let item of ratings; let index=index" class="bg-white rounded-lg shadow divide-gray-200 contract-card">
+                <div class="w-full flex items-center justify-between p-6 space-x-6">
+                    <div class="flex-1 truncate">
+                        <div class="flex items-center space-x-3">
+                            <h3 class="text-gray-900 text-sm font-medium truncate">Esed corp.</h3>
+                            <span
+                                class="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full custom-chip">Software</span>
+                        </div>
+                        <p class="mt-1 text-gray-500 text-sm truncate">Desarrollo de páginas web</p>
+                    </div>
+                    <img class="w-10 h-10 bg-gray-300 rounded-full flex-shrink-0"
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
+                        alt="">
+                </div>
+                <ul class="measurer">
+                    <li [ngClass]="{'measurer-active': ratings[index] >= 1}"></li>
+                    <li [ngClass]="{'measurer-active': ratings[index] >= 2}"></li>
+                    <li [ngClass]="{'measurer-active': ratings[index] >= 3}"></li>
+                    <li [ngClass]="{'measurer-active': ratings[index] >= 4}"></li>
+                    <li [ngClass]="{'measurer-active': ratings[index] >= 5}"></li>
+                </ul>
+            </li>
+
+            <!-- More people... -->
+        </ul>
+    </div>
+</div>

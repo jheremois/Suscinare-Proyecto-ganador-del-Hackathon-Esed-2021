@@ -32,7 +32,7 @@ const routes: Routes = [
           },
           {
             path: 'contratos',
-            loadChildren: () => import('@views/profile/profile.module').then(m => m.ProfileModule)
+            loadChildren: () => import('@views/my-contracts/my-contracts.module').then(m => m.MyContractsModule)
           },
           {
             path: 'cartera',

@@ -13,6 +13,7 @@ import { MaterialModule } from "@shared/material/material.module";
 import { ComponentsModule } from "@shared/components/components.module";
 import { OfertasComponent } from './views/ofertas/ofertas.component';
 import { EntradasComponent } from './views/entradas/entradas.component';
+import { MyContractsComponent } from './views/my-contracts/my-contracts.component';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import { EntradasComponent } from './views/entradas/entradas.component';
     AppComponent,
     RedComponent,
     OfertasComponent,
-
+    MyContractsComponent
 
   ],
   imports: [
