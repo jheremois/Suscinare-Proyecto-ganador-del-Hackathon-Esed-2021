@@ -1,0 +1,68 @@
+<div class="content-stat">
+  <div class="card-stat">
+    <div class="flex justify-between">
+      <h4>Paquete de Trabajo</h4>
+      <div class="select">
+        <mat-label>Mes</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let item of workComplete.labels">
+            {{ item }}
+          </mat-option>
+        </mat-select>
+      </div>
+    </div>
+    <div class="card">
+      <app-grafic
+        [Labels]="workPack.labels"
+        [data]="workPack.data"
+      ></app-grafic>
+    </div>
+  </div>
+  <div class="card-stat">
+    <div class="flex justify-between">
+      <h4>Trabajos Completados</h4>
+      <div class="select">
+        <mat-label>Mes</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let item of  workComplete.labels">
+            {{ item }}
+          </mat-option>
+        </mat-select>
+      </div>
+    </div>
+    <div class="card">
+      <app-grafic
+        [Labels]="workComplete.labels"
+        [data]="workComplete.data"
+        [Type]="workComplete.type"
+      ></app-grafic>
+    </div>
+  </div>
+
+  <div class="line">
+    <div class="flex justify-between">
+      <h4>Prestigio</h4>
+      <div class="select">
+        <mat-label>Diario</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let item of ['fresa', 'piña', 'aguacate']">
+            {{ item }}
+          </mat-option>
+        </mat-select>
+      </div>
+    </div>
+    <div class="card m-card">
+      <canvas
+        baseChart
+        width="1150"
+        height="300"
+        [datasets]="lineChartData"
+        [labels]="lineChartLabels"
+        [colors]="lineChartColors"
+        [legend]="lineChartLegend"
+        [chartType]="lineChartType"
+      ></canvas>
+    </div>
+  </div>
+</div>
+<!-- <app-grafic [Labels]="workPack.labels" [data]="workPack.data"></app-grafic> -->

@@ -1,3 +1,4 @@
+import { RedComponent } from './views/red/red.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
@@ -10,10 +11,15 @@ import { ReactiveFormsModule } from "@angular/forms";
 
 import { MaterialModule } from "@shared/material/material.module";
 import { ComponentsModule } from "@shared/components/components.module";
+import { OfertasComponent } from './views/ofertas/ofertas.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RedComponent,
+    OfertasComponent
+
   ],
   imports: [
     BrowserModule,

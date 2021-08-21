@@ -1,0 +1,35 @@
+.business-container {
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+.list-chip {
+    display: flex;
+    width: 99.7%;
+    height: 7vh;
+    align-items: center;
+    background: #fff;
+    margin: 1px 2px;
+}
+
+.chip-filter {
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid #4e5a6a !important;
+    margin: 0px 10px;
+    color: #4e5a6a;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 6px 8px;
+    width: 78px;
+    height: 25px;
+    background: rgba(78, 90, 106, 0.05);
+    border: 1px solid #4e5a6a;
+    justify-content: center;
+    text-align: center;
+}
+
+.chip-list {
+    width: 100%;
+}

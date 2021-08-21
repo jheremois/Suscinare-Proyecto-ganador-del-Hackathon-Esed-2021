@@ -38,3 +38,16 @@
         opacity: 40%;
     }
 }
+
+#registerbg{
+    transform: scale(1.1);
+    background-image: url('../../../../assets/regisbg.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.inside{
+    transform: scale(0.9);
+}

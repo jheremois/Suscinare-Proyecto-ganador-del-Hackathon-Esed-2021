@@ -2,7 +2,7 @@
 <div class="flex">
     <aside class="shadow-lg h-screen">
         <div class="justify-center flex mt-9 mb-5">
-            <a routerLinkActive="active2" matRipple routerLink="perfil" [matRippleColor]="color" class="flex items-center justify-center rounded-full py-3 w-10/12 bggrad">
+            <a routerLinkActive="active2" matRipple routerLink="perfil" [matRippleColor]="color" class="flex items-center justify-center rounded-full py-3 bggrad perfinlink">
                 <div class="icon text-white">
                     <mat-icon>
                         account_circle
@@ -67,16 +67,16 @@
             <a routerLinkActive="active" matRipple routerLink="cartera" [matRippleColor]="color" class="option flex items-center option">
                 <div class="icon text-bla">
                     <mat-icon>
-                        account_balance_wallet
+                        work
                     </mat-icon>
                 </div>
                 <p class="text-bla">
-                    Cartera
+                    Ofertas
                 </p>
             </a>
         </nav>
     </aside>
-    <div class="cont bg-gray-200">
+    <div class="cont bg-gray-50">
         <router-outlet></router-outlet>
     </div>
 </div>
