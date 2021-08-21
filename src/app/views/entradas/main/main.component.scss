@@ -1,0 +1,33 @@
+.messages{
+  width: 48%;
+
+}
+message-content{
+  width: 100%;
+
+}
+.mensage{
+  width: 308px;
+  height: 60px;
+  left: 13px;
+  top: 51px;
+  background: #E2E6FC;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.r{
+  align-self: flex-end;
+
+}
+.send{
+  width: 5vh;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.c{
+  position: relative;
+    top: 46%;
+}
