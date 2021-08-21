@@ -19,13 +19,13 @@ export class MainComponent implements OnInit {
       {
         nombre: 'Version DO',
         ubicacion: 'La Romana',
-        actividad_comercial: 'Tecnología',
+        actividad_comercial: 'Redes sociales',
         img_url: 'http://lorempixel.com/350/350/'
       },
       {
-        nombre: 'Version DO',
+        nombre: 'Shuniata',
         ubicacion: 'La Romana',
-        actividad_comercial: 'Tecnología',
+        actividad_comercial: 'Finanzas',
         img_url: 'http://lorempixel.com/350/350/'
       },
       {
