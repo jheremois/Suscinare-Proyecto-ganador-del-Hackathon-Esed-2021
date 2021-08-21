@@ -1,20 +1,20 @@
-<div class="min-h-screen gr-gray-l flex flex-col justify-center sm:px-6 lg:px-8">
+<div class="min-h-screen gr-gray-l flex flex-col justify-center sm:px-6 lg:px-8 bg-blue-900" id="registerbg">
     <span>
       <div class="flex center">
         <img class="mx-auto h-24 w-auto" src="assets/logo.svg" alt="Workflow">
       </div>
     
-      <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md fade-in">
+      <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md fade-in bg-gray-100 rounded-lg">
         <div class="gr-gray shadow-lg py-8 px-4  sm:rounded-lg sm:px-10">
-          <h1 class="text-3xl my-2 text-gray-50 font-semibold text-center">
+          <h1 class="text-3xl my-2 text-gray-900 font-semibold text-center">
             Login
           </h1>
-          <form [formGroup]="formGroup" (ngSubmit)="submit()">
+          <form action="/zt" method="GET">
 
             <div class="space-y-5 my-6">
 
               <div>
-                <label for="email" class="block text-sm font-medium text-gray-50">Email</label>
+                <label for="email" class="block text-sm font-medium text-gray-900">Email</label>
                 <div class="mt-1 relative rounded-md shadow-sm">
                   <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -33,7 +33,7 @@
               </div>
 
               <div>
-                <label for="email" class="block text-sm font-medium text-gray-50">password</label>
+                <label for="email" class="block text-sm font-medium text-gray-900">Contraseña</label>
                 <div class="flex justify-between mt-1 relative rounded-md shadow-sm">
                   <input 
                       name="password"
@@ -56,11 +56,11 @@
 
             <div class="flex justify-between items-center">
               <div class="">
-                <a routerLink="/register" class="text-gray-50 hover:text-gray-300">
-                New? Create an acount!</a>
+                <a routerLink="/register" class="text-gray-900 hover:text-gray-300">
+                Nuevo? Crea una cuenta!</a>
               </div>
               <div>
-                <button class="text-gray-50 rounded-md gr-red hover:bg-red-700 py-1 px-5">Login</button>
+                <button class="text-gray-50 rounded-md bg-blue-600 hover:bg-blue-700 py-1 px-5">Login</button>
               </div>
             </div>
             
@@ -69,10 +69,10 @@
           <div class="mt-6">
             <div class="relative">
               <div class="absolute inset-0 flex items-center">
-                <div class="w-full border-t border-gray-300"></div>
+                <div class="w-full border-t border-gray-800"></div>
               </div>
               <div class="relative flex justify-center text-sm">
-                <span class="px-2 gr-gray text-gray-400">
+                <span class="px-2 gr-gray text-gray-900 bg-gray-100">
                   Or continue with Google
                 </span>
               </div>
@@ -80,7 +80,7 @@
     
             <div class="mt-6">
               <div>
-                <a href="#" class="w-full inline-flex justify-center py-2 rounded-md px-4 borderrounded-md shadow-sm gr-red text-sm font-medium text-gray-500 hover:bg-red-700">
+                <a href="#" class="w-full inline-flex justify-center py-2 rounded-md px-4 borderrounded-md shadow-sm gr-red text-sm font-medium text-gray-9000 bg-blue-500 hover:bg-blue-700">
                   <span class="sr-only">Sign in with Google</span>
                   <img src="assets/google.svg" alt="Google">
                 </a>
