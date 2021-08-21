@@ -7,13 +7,17 @@ import { GraficComponent } from './grafic/grafic.component';
 import { ChartsModule } from 'ng2-charts';
 import { ContactCardComponent } from './contact-card/contact-card.component';
 import { PlaceholdComponent } from './placehold/placehold.component';
+import { ChipComponent } from './chip/chip.component';
+import { ChatListComponent } from './chat-list/chat-list.component';
 
 const components = [
   TooltipComponent,
   ListAvatarWorkComponent,
   GraficComponent,
   ContactCardComponent,
-  PlaceholdComponent
+  PlaceholdComponent,
+  ChipComponent,
+  ChatListComponent,
 ]
 const module = [
   ChartsModule
@@ -21,7 +25,7 @@ const module = [
 
 @NgModule({
   declarations: [
-    ...components
+    ...components,
   ],
   imports: [
     CommonModule,

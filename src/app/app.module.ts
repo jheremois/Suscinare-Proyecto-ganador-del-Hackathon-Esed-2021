@@ -12,13 +12,15 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { MaterialModule } from "@shared/material/material.module";
 import { ComponentsModule } from "@shared/components/components.module";
 import { OfertasComponent } from './views/ofertas/ofertas.component';
+import { EntradasComponent } from './views/entradas/entradas.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     RedComponent,
-    OfertasComponent
+    OfertasComponent,
+
 
   ],
   imports: [
