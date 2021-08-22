@@ -1,0 +1,47 @@
+.img {
+    width: 6vh;
+    height: auto;
+    border-radius: 100%;
+}
+.description {
+    width: 70%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #7d8295;
+    margin-top: 10px;
+}
+.offer-title {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 14px;
+    color: #004aad;
+    margin: 0;
+}
+.offer-item:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 74, 173, 0.19) !important;
+}
+.waiting-for {
+    width: max-content;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+    margin-top: 10px;
+
+    /* identical to box height */
+
+    color: #7d8093;
+}
+.offer-img {
+    margin: 10px 20px 0 11px;
+}
+
+.custom-chip {
+    background: #1DA0FF;
+    color: #FFFFFF;
+}

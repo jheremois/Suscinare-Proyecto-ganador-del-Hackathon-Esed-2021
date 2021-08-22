@@ -35,8 +35,8 @@ const routes: Routes = [
             loadChildren: () => import('@views/my-contracts/my-contracts.module').then(m => m.MyContractsModule)
           },
           {
-            path: 'cartera',
-            loadChildren: () => import('@views/profile/profile.module').then(m => m.ProfileModule)
+            path: 'ofertas',
+            loadChildren: () => import('@views/offers/offers.module').then(m => m.OffersModule)
           },
           {
             path: '**',

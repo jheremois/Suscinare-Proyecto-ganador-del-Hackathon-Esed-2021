@@ -1,0 +1,31 @@
+<app-placehold space="2"></app-placehold>
+<app-chip [tag]="tags"></app-chip>
+
+<ng-container *ngFor="let item of [1,2,3,4,5]">
+    <div class="flex w-full bg-white p-3 justify-between items-center offer-item">
+        <div class="flex flex-row items-center ">
+            <div class="offer-img">
+                <img class="img" src="assets/empresas/image5.png" alt="">
+            </div>
+
+            <div class="flex">
+                <div>
+                    <span class="name-empresa m-1 text-blue-600 offer-title">Rediseño a mi web</span>
+                    <div class="flex items-center">
+                        <div class="text-gray-500">
+                            <p class="description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas neque at modi omnis odio,
+                                ullam ipsam temporibus quidem voluptate sint dolore sunt atque repellendus qui!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <span
+                        class="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full custom-chip">Software</span>
+                    <p class="waiting-for">Antes del 22 de agostos 2021</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>
