@@ -20,49 +20,79 @@ export class MainComponent implements OnInit {
         nombre: 'Version DO',
         ubicacion: 'La Romana',
         actividad_comercial: 'Redes sociales',
-        img_url: 'http://lorempixel.com/350/350/'
+        img_url: 'assets/empresas/image2.png'
       },
       {
         nombre: 'Shuniata',
         ubicacion: 'La Romana',
         actividad_comercial: 'Finanzas',
-        img_url: 'http://lorempixel.com/350/350/'
+        img_url: 'assets/empresas/image4.png'
       },
       {
         nombre: 'Version DO',
         ubicacion: 'La Romana',
-        actividad_comercial: 'Tecnología',
-        img_url: 'http://lorempixel.com/350/350/'
+        actividad_comercial: 'Redes sociales',
+        img_url: 'assets/empresas/image2.png'
+      },
+      {
+        nombre: 'Shuniata',
+        ubicacion: 'La Romana',
+        actividad_comercial: 'Finanzas',
+        img_url: 'assets/empresas/image4.png'
       },
       {
         nombre: 'Version DO',
         ubicacion: 'La Romana',
-        actividad_comercial: 'Tecnología',
-        img_url: 'http://lorempixel.com/350/350/'
+        actividad_comercial: 'Redes sociales',
+        img_url: 'assets/empresas/image2.png'
+      },
+      {
+        nombre: 'Shuniata',
+        ubicacion: 'La Romana',
+        actividad_comercial: 'Finanzas',
+        img_url: 'assets/empresas/image4.png'
       },
       {
         nombre: 'Version DO',
         ubicacion: 'La Romana',
-        actividad_comercial: 'Tecnología',
-        img_url: 'http://lorempixel.com/350/350/'
+        actividad_comercial: 'Redes sociales',
+        img_url: 'assets/empresas/image2.png'
+      },
+      {
+        nombre: 'Shuniata',
+        ubicacion: 'La Romana',
+        actividad_comercial: 'Finanzas',
+        img_url: 'assets/empresas/image4.png'
       },
       {
         nombre: 'Version DO',
         ubicacion: 'La Romana',
-        actividad_comercial: 'Tecnología',
-        img_url: 'http://lorempixel.com/350/350/'
+        actividad_comercial: 'Redes sociales',
+        img_url: 'assets/empresas/image2.png'
+      },
+      {
+        nombre: 'Shuniata',
+        ubicacion: 'La Romana',
+        actividad_comercial: 'Finanzas',
+        img_url: 'assets/empresas/image4.png'
       },
       {
         nombre: 'Version DO',
         ubicacion: 'La Romana',
-        actividad_comercial: 'Tecnología',
-        img_url: 'http://lorempixel.com/350/350/'
+        actividad_comercial: 'Redes sociales',
+        img_url: 'assets/empresas/image2.png'
+      },
+      {
+        nombre: 'Shuniata',
+        ubicacion: 'La Romana',
+        actividad_comercial: 'Finanzas',
+        img_url: 'assets/empresas/image4.png'
       },
       {
         nombre: 'Version DO',
         ubicacion: 'La Romana',
-        actividad_comercial: 'Tecnología',
-        img_url: 'http://lorempixel.com/350/350/'
+        actividad_comercial: 'Redes sociales',
+        img_url: 'assets/empresas/image2.png'
       }
     ]
 
