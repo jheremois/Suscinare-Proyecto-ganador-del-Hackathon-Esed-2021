@@ -1,4 +1,4 @@
-# suscinare (Proyecto ganador del Hackathon Esed 2021)
+# suscinare 🏆 (Proyecto ganador del Hackathon Esed 2021)
 
 Suscinare es una plataforma que ayuda a los emprendedores y pequeñas empresas a darse a conocer y obtener relevancia en su area.
 
